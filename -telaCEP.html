@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>API - CEP</title>
+</head>
+
+<body id="body-cep">
+    <header>
+        <nav>
+            <img src="imagens/logo.png" height="57px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="-telaCEP.html">CEP</a></li>
+                <li><a href="-telaDOLAR.html">DOLAR</a></li>
+                <li><a href="-telaFakeAPI.html">Twitch</a></li>
+                <li><a href="-telaimpressaoSA.html">Ind.SA</a></li>
+                <li><a href="-telaJSON.html">JSON</a></li>
+                <li><a href="-telaClima.html">Clima</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-classico">
+            <div class="elemento-classico">
+                <fieldset id="fieldset-classico">
+                    <legend>Endereço</legend>
+                    <label for="cep">CEP:</label>
+                    <br>
+                    <input type="text" id="cep" autocomplete="off">
+
+                    <br>
+                    <br>
+
+                    <label for="rua">RUA:</label>
+                    <br>
+                    <input type="text" id="rua" readonly>
+
+                    <br>
+                    <br>
+
+                    <label for="numero">NÚMERO:</label>
+                    <br>
+                    <input type="text" id="numero">
+
+                    <br>
+                    <br>
+
+                    <label for="bairro">BAIRRO:</label>
+                    <br>
+                    <input type="text" id="bairro" readonly>
+
+                    <br>
+                    <br>
+
+                    <label for="cidade">CIDADE:</label>
+                    <br>
+                    <input type="text" id="cidade" readonly>
+
+                    <br>
+                    <br>
+
+                    <label for="estado">ESTADO:</label>
+                    <br>
+                    <input type="text" id="estado" readonly>
+                </fieldset>
+            </div>
+    </main>
+
+</body>
+
+<script src="javaScript/script-cep.js">
+
+</script>
+
+</html>

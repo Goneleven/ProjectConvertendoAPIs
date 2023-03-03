@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.botao-index {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-right: 10px;
+    width: 5rem;
+    height: 2.5rem;
+    border: none;
+
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(182, 179, 179), rgb(203, 219, 211));
+    background-size: 500% 100%;
+
+    animation-name: buttonBackground;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttonBackground {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.botao-index a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.botao-index {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.botao-index:after {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.botao-index:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.botao-index:hover::after {
+    opacity: 1;
+}
+
+#moeda{
+    padding-top: 10%;
+}
+
+#botao-dolar{
+    margin-top: 20%;
+}
+
+/* Animação do Botão e o Botão: */
+
+.botao {
+
+    border-radius: 15px;
+    margin: 1em;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+    background: linear-gradient(to right, rgb(125, 90, 168), rgb(214, 199, 225), rgb(243, 238, 255));
+    background-size: 500% 100%;
+
+    animation-name: buttonBackground;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes buttonBackground {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+/* ______________________________ */
+
+/* Animação do Botão com o MOUSE: */
+
+.botao {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.botao:after {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.botao:hover {
+    transform: scale(1.25, 1.25);
+}
+
+.botao:hover::after {
+    opacity: 1;
+}
+
+#botao-dolar {
+
+    border-radius: 15px;
+    margin: 1em;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+#botao-dolar {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#botao-dolar:after {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#botao-dolar:hover {
+    transform: scale(1.25, 1.25);
+}
+
+#botao-dolar:hover::after {
+    opacity: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+li a :hover {
+    text-decoration: none;
+    color: rgb(100, 148, 220);
+}
+
+p {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+nav p {
+    font-weight: bold;
+}
+
+#body-index {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('../imagens/headerHome.jpg');
+}
+
+#body-cep {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('../imagens/backgroundCEP.png');
+    background-position: top;
+}
+
+#body-dolar {
+    height: calc(100vh - 100px);
+    background: no-repeat center/cover url('../imagens/backgroundDolar.jpg');
+}
+
+#body-twitch {
+    height: calc(100vh - 1px);
+    background: no-repeat center/cover url('../imagens/Background.png');
+    color: white;
+
+}
+
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    color: white;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin-bottom: 10px;
+}
+
+#caixa-dolar {
+    font-family: sans-serif;
+    width: 200px;
+    height: 150px;
+    border: 0px solid brown;
+    border-radius: 15px;
+    padding-top: 10%;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+
+#fieldset-classico {
+    text-align: center;
+    font-family: sans-serif;
+    width: 250px;
+    height: 365px;
+    backdrop-filter: blur(10px);
+    border: 0px solid brown;
+    border-radius: 10px;
+    color: white;
+}
+
+.container-classico {
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    padding-top: 10%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.elemento-classico {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-twitch {
+    width: 100%;
+    height: 10%;
+    position: static;
+    top: 0;
+    left: 0;
+    display: flex;
+
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    color: white;
+    text-align: center;
+}
+
+.elemento-twitch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+}
+
+.container-twitch2 {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.elemento-twitch2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagem {
+    padding-top: 10px;
+}
+
+#fieldset-twitch {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 2.5px solid black
+}

@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+
+#body-clima {
+    height: calc(100vh - 1px);
+    background: no-repeat center/cover url('../imagens/background-clima.jpg');
+}
+
+.container-clima{
+    text-align: center;
+}
+
+.elemento-clima{
+    padding-top: 10%;
+}
+
+#botao-clima {
+    border-radius: 10px;
+    font-weight: bold;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+
+    background: linear-gradient(to right, rgb(88, 88, 134), rgb(128, 67, 67), rgb(95, 154, 125));
+    background-size: 500% 100%;
+
+    animation-name: buttonBackground;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#parteCima-clima{
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+nav p {
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0 15px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+li a :hover {
+    text-decoration: none;
+    color: rgb(100, 148, 220);
+}

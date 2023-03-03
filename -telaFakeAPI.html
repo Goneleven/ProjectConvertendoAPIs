@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>API - Usuários</title>
+</head>
+
+<body id="body-twitch">
+    <header>
+        <nav>
+            <img src="imagens/logo.png" height="57px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="-telaCEP.html">CEP</a></li>
+                <li><a href="-telaDOLAR.html">DOLAR</a></li>
+                <li><a href="-telaFakeAPI.html">Twitch</a></li>
+                <li><a href="-telaimpressaoSA.html">Ind.SA</a></li>
+                <li><a href="-telaJSON.html">JSON</a></li>
+                <li><a href="-telaClima.html">Clima</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container-twitch">
+        <div class="elemento-twitch">
+            <fieldset id="fieldset-twitch">
+                <!-- PESSOAS: -->
+                <div id="nome"> </div>
+                <div id="idade"> </div>
+                <div id="desde"> </div>
+                <div id="sexo"> </div>
+                <div id="imagem"></div>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <div class="container-twitch2">
+        <div class="elemento-twitch2">
+            <button onclick="carregarConteudo1()" class="botao">Criador - 1</button>
+            <button onclick="carregarConteudo2()" class="botao">Criador - 2</button>
+            <button onclick="carregarConteudo3()" class="botao">Criador - 3</button>
+            <br>
+            <button onclick="carregarConteudo4()" class="botao">Criador - 4</button>
+            <button onclick="carregarConteudo5()" class="botao">Criador - 5</button>
+            <br>
+            <button onclick="window.location.reload()" class="botao">Atualizar</button>
+        </div>
+    </div>
+</body>
+
+<script src="javaScript/script-fakeAPI.js">
+</script>
+
+</html>

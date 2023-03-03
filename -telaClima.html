@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-clima.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="javaScript/script-clima.js"></script>
+    <title>Clima</title>
+</head>
+
+<body id="body-clima">
+    <header>
+        <nav>
+            <img src="imagens/logo.png" height="57px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="-telaCEP.html">CEP</a></li>
+                <li><a href="-telaDOLAR.html">DOLAR</a></li>
+                <li><a href="-telaFakeAPI.html">Twitch</a></li>
+                <li><a href="-telaimpressaoSA.html">Ind.SA</a></li>
+                <li><a href="-telaJSON.html">JSON</a></li>
+                <li><a href="-telaClima.html">Clima</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container-clima">
+        <div class="elemento-clima">
+            <div id="parteCima-clima">
+                <h1>Previsão Do Tempo</h1>
+
+                <p id="temperatura">Carregando...</p>
+            </div>
+            <input type="text" id="pesquisar" placeholder="Coloque a localização Aqui">
+            <br>
+            <br>
+            <label for="pesquisa"></label>
+
+            <button onclick="getWeather()" id="botao-clima">Pesquisar Temperatura</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
